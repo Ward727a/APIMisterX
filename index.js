@@ -11,11 +11,7 @@ const serviceAccount = require("./serviceaccountkey.json");
 
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
-    databaseURL: 'https://misterx-8c3e6-default-rtdb.europe-west1.firebasedatabase.app/',
-
-    databaseAuthVariableOverride: {
-        uid: "T19^$#J&wG#*69Rf!*Z6U0#9^e%3z79B"
-    }
+    databaseURL: '[DATAURL]'
 });
 
 const database = admin.database();
